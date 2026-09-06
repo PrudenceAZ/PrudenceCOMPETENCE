@@ -638,96 +638,363 @@ img {
 
 
 /* ---------- offres (pricing-style cards) ---------- */
+/* =========================================
+   OFFRES
+========================================= */
+
 .offers-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.25rem;
-  align-items: stretch;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
 }
 
+
+/* =========================================
+   CARTE
+========================================= */
+
 .offer-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 1.25rem;
-  padding: 1.8rem;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.25s ease, border-color 0.25s ease;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem;
+
+    min-height: 100%;
+
+    border: 1px solid var(--border);
+    border-radius: 1.4rem;
+
+    background: var(--surface);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
 }
 
 .offer-card:hover {
-  transform: translateY(-4px);
+    transform: translateY(-7px);
+
+    border-color: rgba(232, 163, 61, 0.35);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.12);
 }
 
-.offer-card--premium {
-  background: linear-gradient(160deg, var(--gold-soft), transparent 70%), var(--surface);
-  border-color: rgba(232, 163, 61, 0.4);
+
+/* =========================================
+   HAUT DE CARTE
+========================================= */
+
+.offer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 1rem;
+
+    margin-bottom: 1.5rem;
 }
 
-.offer-tag {
-  display: inline-block;
-  font-size: 0.78rem;
-  color: var(--gold);
-  background: var(--gold-soft);
-  padding: 0.3rem 0.7rem;
-  border-radius: 999px;
-  margin-bottom: 0.9rem;
-  width: fit-content;
+.offer-number {
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    color: var(--muted);
+
+    letter-spacing: 1.5px;
 }
+
+.offer-price {
+    font-size: 1rem;
+    font-weight: 800;
+
+    color: #e8a33d;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   TITRE
+========================================= */
 
 .offer-card h3 {
-  font-family: var(--serif);
-  font-weight: 500;
-  font-size: 1.3rem;
-  margin-bottom: 0.5rem;
+    margin: 0 0 0.8rem;
+
+    font-size: 1.45rem;
+    line-height: 1.25;
+    letter-spacing: -0.4px;
 }
 
 .offer-desc {
-  color: var(--muted);
-  font-size: 0.92rem;
-  margin-bottom: 1.2rem;
+    margin: 0 0 1.5rem;
+
+    color: var(--muted);
+
+    font-size: 0.95rem;
+    line-height: 1.7;
 }
 
+
+/* =========================================
+   LISTE
+========================================= */
+
 .offer-list {
-  list-style: none;
-  display: grid;
-  gap: 0.65rem;
-  margin-bottom: 1.5rem;
-  flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.8rem;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
 }
 
 .offer-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.6rem;
-  font-size: 0.9rem;
-  color: var(--text);
+    display: flex;
+    align-items: flex-start;
+
+    gap: 0.65rem;
+
+    font-size: 0.9rem;
+    line-height: 1.5;
+
+    color: var(--text);
 }
 
 .check {
-  flex-shrink: 0;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: var(--teal-soft);
-  color: var(--teal);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.65rem;
-  margin-top: 0.15rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 20px;
+
+    width: 20px;
+    height: 20px;
+
+    margin-top: 1px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.07);
+
+    color: #e8a33d;
+
+    font-size: 0.7rem;
+    font-weight: 800;
 }
 
 .check--gold {
-  background: rgba(232, 163, 61, 0.2);
-  color: var(--gold);
+    background: rgba(232, 163, 61, 0.15);
+    color: #e8a33d;
 }
 
+
+/* =========================================
+   ACTIONS
+========================================= */
+
 .offer-actions {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.7rem;
+
+    margin-top: auto;
+    padding-top: 2rem;
+}
+
+.offer-actions .btn {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 48px;
+
+    border-radius: 0.75rem;
+
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 0.88rem;
+    font-weight: 700;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.offer-actions .btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Bouton achat */
+
+.offer-actions .btn-primary {
+    background: #ffffff;
+    color: #000000;
+
+    border: 1px solid #ffffff;
+}
+
+.offer-actions .btn-primary:hover {
+    background: #e8a33d;
+    border-color: #e8a33d;
+}
+
+
+/* WhatsApp */
+
+.offer-actions .btn-whatsapp {
+    background: transparent;
+
+    color: var(--text);
+
+    border: 1px solid var(--border);
+}
+
+.offer-actions .btn-whatsapp:hover {
+    border-color: rgba(232, 163, 61, 0.45);
+
+    color: #e8a33d;
+}
+
+
+/* =========================================
+   PACK PREMIUM
+========================================= */
+
+.offer-card--premium {
+    border-color: rgba(232, 163, 61, 0.35);
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(232, 163, 61, 0.1),
+            transparent 35%
+        ),
+        var(--surface);
+}
+
+.offer-card--premium:hover {
+    border-color: rgba(232, 163, 61, 0.65);
+}
+
+.offer-card--premium .offer-price {
+    font-size: 1.1rem;
+}
+
+.offer-tag {
+    display: inline-flex;
+    align-self: flex-start;
+
+    margin-bottom: 1.2rem;
+    padding: 0.45rem 0.7rem;
+
+    border: 1px solid rgba(232, 163, 61, 0.3);
+    border-radius: 999px;
+
+    background: rgba(232, 163, 61, 0.08);
+
+    color: #e8a33d;
+
+    font-size: 0.65rem;
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+}
+
+.offer-actions .btn-premium {
+    background: #e8a33d;
+    border-color: #e8a33d;
+
+    color: #111111;
+}
+
+.offer-actions .btn-premium:hover {
+    filter: brightness(1.08);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .offers-grid {
+        grid-template-columns: 1fr;
+
+        gap: 1rem;
+
+        margin-top: 2rem;
+    }
+
+    .offer-card {
+        padding: 1.4rem;
+
+        border-radius: 1.15rem;
+    }
+
+    .offer-card h3 {
+        font-size: 1.25rem;
+    }
+
+    .offer-desc {
+        font-size: 0.88rem;
+    }
+
+    .offer-list {
+        gap: 0.7rem;
+    }
+
+    .offer-list li {
+        font-size: 0.85rem;
+    }
+
+    .offer-price {
+        font-size: 0.9rem;
+    }
+
+    .offer-actions {
+        padding-top: 1.5rem;
+    }
+}
+
+
+/* =========================================
+   PETITS TELEPHONES
+========================================= */
+
+@media (max-width: 380px) {
+
+    .offer-card {
+        padding: 1.2rem;
+    }
+
+    .offer-top {
+        margin-bottom: 1.2rem;
+    }
+
+    .offer-card h3 {
+        font-size: 1.15rem;
+    }
+
+    .offer-price {
+        font-size: 0.82rem;
+    }
 }
 /* ---------- TEMOIGNAGES / SCREENSHOT PROOF ---------- */
 
@@ -855,6 +1122,37 @@ img {
         filter 0.4s ease;
 }
 
+    .proof-placeholder {
+      position: relative;
+      z-index: 1;
+
+      min-height: 360px;
+      padding: 1.5rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+
+      border: 1px dashed rgba(243, 239, 230, 0.25);
+      border-radius: 0.9rem;
+
+      color: var(--text);
+      text-align: center;
+      background: rgba(255, 255, 255, 0.025);
+    }
+
+    .proof-placeholder span {
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .proof-placeholder small {
+      color: var(--muted);
+      font-size: 0.72rem;
+    }
+
 
 /* ---------- EFFET HOVER ---------- */
 
@@ -964,6 +1262,10 @@ img {
 
     .proof-card img {
         max-height: 400px;
+    }
+
+    .proof-placeholder {
+      min-height: 320px;
     }
 }
 
