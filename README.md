@@ -2,6 +2,10 @@
 
 Site web statique en HTML, CSS et JavaScript pour présenter mes services, mon parcours et mes offres.
 
+## Débogage local dans Chrome
+
+Dans VS Code, ouvrez le menu **Exécuter et déboguer**, sélectionnez **Launch Chrome**, puis appuyez sur `F5`. La configuration ouvre directement `index.html` et ne nécessite pas de serveur local.
+
 ## Déploiement GitHub Pages
 
 1. Créez un dépôt GitHub vide.
