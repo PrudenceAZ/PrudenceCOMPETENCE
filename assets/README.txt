@@ -40,8 +40,6 @@ dans le bon dossier. Formats acceptés : .jpg, .jpeg ou .png (si tu utilises
    -> temoignage-6.jpg
    -> temoignage-7.jpg
    -> temoignage-8.jpg
-   -> temoignage-9.jpg
-   -> temoignage-10.jpg
    Ce sont les captures d'écran de résultats d'élèves (ventes, commandes,
    messages de retour, etc.). Tu peux en mettre plus ou moins de 6 : si tu
    en ajoutes, duplique un bloc <figure class="proof-card">...</figure>
