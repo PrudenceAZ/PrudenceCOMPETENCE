@@ -1,0 +1,8 @@
+Dépose ici les 7 photos illustrant chaque étape de 'Mon parcours' :
+etape-1-inscription-faseg.jpg
+etape-2-debuts-ecommerce.jpg
+etape-3-publicite-digitale.jpg
+etape-4-produits-digitaux.jpg
+etape-5-obtention-licence.jpg
+etape-6-installation-france.jpg
+etape-7-aujourdhui.jpg

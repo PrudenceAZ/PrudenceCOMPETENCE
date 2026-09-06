@@ -3,189 +3,513 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Je vous accompagne | Marketing Digital & IA</title>
+    <title>Renoix — Mentor E-commerce & Publicité Digitale</title>
     <meta
       name="description"
-      content="Je vous aide à vendre plus, à générer des clients et à transformer votre activité grâce à l’IA, la publicité digitale et la création de boutiques en ligne."
+      content="Formations en publicité Facebook & TikTok Ads, création de boutique Shopify et produits digitaux. Plus de 50 élèves formés, plus de 100M FCFA générés."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Sora:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
+    <div class="bg-scene" aria-hidden="true">
+      <div class="bg-blob bg-blob--gold"></div>
+      <div class="bg-blob bg-blob--teal"></div>
+      <div class="bg-grain"></div>
+    </div>
+
     <header class="header">
       <div class="container nav-bar">
-        <a href="#hero" class="brand">Moi & Mes Services</a>
-        <button class="menu-toggle" aria-label="Ouvrir le menu">
-          <span></span><span></span><span></span>
-        </button>
+        <a href="#hero" class="brand">Renoix</a>
+
         <nav class="nav-links">
-          <a href="#services">Offres</a>
-          <a href="#testimonials">Témoignages</a>
-          <a href="#about">À propos</a>
+          <a href="#offres">Offres</a>
+          <a href="#transformation">Transformation</a>
+          <a href="#temoignages">Témoignages</a>
+          <a href="#parcours">Parcours</a>
+          <a href="#eleves">Élèves</a>
           <a href="#contact">Contact</a>
         </nav>
+
+        <div class="header-right">
+          <a href="#reservation" class="btn btn-rdv">
+            <span class="btn-rdv-dot"></span>
+            Réserver <span class="btn-rdv-price">5000&nbsp;F</span>
+          </a>
+          <button class="menu-toggle" aria-label="Ouvrir le menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
       </div>
     </header>
 
     <main>
+      <!-- HERO -->
       <section class="hero" id="hero">
         <div class="container hero-grid">
+          <div class="hero-photo-col">
+            <div class="hero-photo-frame">
+              <img src="assets/profil/photo-profil.jpg" alt="Photo de Renoix" />
+              <div class="hero-photo-overlay"></div>
+            </div>
+            <span class="hero-photo-badge">Bénin → France</span>
+          </div>
+
           <div class="hero-content">
-            <p class="eyebrow">E-commerce • Marketing digital • IA</p>
-            <h1>Je me vends moi, mes compétences et mes services pour vous aider à vendre plus et mieux.</h1>
+            <p class="hero-pill">Disponible pour formations &amp; sessions privées</p>
+            <h1>
+              J’apprends aux entrepreneurs à vendre en ligne, <em>vite</em> et <em>bien</em>.
+            </h1>
             <p class="hero-text">
-              Je suis e-commerçant, expert en marketing digital, étudiant en licence 2 en intelligence artificielle et passionné par l’accompagnement des personnes qui veulent développer leur visibilité et leurs ventes. Je ne vends pas seulement des services : je vous accompagne avec des solutions concrètes, simples et efficaces.
+              Pub Facebook &amp; TikTok, boutiques Shopify, produits digitaux : j’ai testé,
+              raté, ajusté et réussi — aujourd’hui je transmets la méthode à ceux qui veulent
+              construire leur activité en ligne.
             </p>
             <div class="hero-actions">
-              <a href="#services" class="btn btn-primary">Découvrir mes offres</a>
-              <a href="https://wa.me/+22957318891" target="_blank" rel="noopener" class="btn btn-secondary">Me contacter sur WhatsApp</a>
+              <a
+                href="https://wa.me/33775454614"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-primary"
+                >Écrire sur WhatsApp</a
+              >
+              <a href="#offres" class="btn btn-secondary">Voir les offres</a>
             </div>
-            <div class="hero-badges">
-              <span>✅ IA générative</span>
-              <span>✅ Publicité Facebook & TikTok</span>
-              <span>✅ Boutique en ligne</span>
+          </div>
+
+          <div class="hero-stats" aria-label="Résultats obtenus">
+            <div class="stat-card stat-card--main">
+              <p class="stat-number" data-count-to="100" data-suffix="M+">0</p>
+              <p class="stat-label">FCFA générés personnellement en e-commerce</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-number" data-count-to="4" data-suffix="+">0</p>
+              <p class="stat-label">Ans d’expérience</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-number" data-count-to="100" data-suffix="+">0</p>
+              <p class="stat-label">Boutiques mises en ligne</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-number" data-count-to="10" data-prefix="~" data-suffix="">0</p>
+              <p class="stat-label">Pays conquis</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-number" data-count-to="50" data-suffix="+">0</p>
+              <p class="stat-label">Élèves formés</p>
             </div>
           </div>
-          <div class="hero-card">
-            <img src="asset image/WhatsApp Image 2026-07-16 at 21.24.14.jpeg" alt="Photo de profil" class="profile-image" />
-            <h3>Pourquoi me choisir ?</h3>
-            <ul>
-              <li>Un accompagnement clair et orienté résultats</li>
-              <li>Des stratégies adaptées à votre activité</li>
-              <li>Un vrai accompagnement pour passer à l’action</li>
-              <li>Des résultats observables rapidement</li>
-            </ul>
-          </div>
         </div>
       </section>
 
-      <section class="section" id="services">
+      <!-- TRANSFORMATION (avant / apres) -->
+      <section class="section" id="transformation">
         <div class="container">
-          <div class="section-title">
-            <p class="eyebrow">Mes offres</p>
-            <h2>Des offres premium, claires et pensées pour votre croissance.</h2>
+          <div class="section-head">
+            <h2>Avant la formation, après la formation</h2>
+            <p>Le vrai changement n’est pas dans la théorie, il est dans ce que vous faites différemment ensuite.</p>
           </div>
 
-          <div class="card-grid">
-            <button type="button" class="service-card" data-offer="ia">
-              <div>
-                <h3>Maîtrise des IA génératives de A à Z</h3>
-                <p class="price">99 000 FCFA</p>
-                <p>Apprenez à utiliser l’intelligence artificielle pour créer du contenu, gagner du temps et automatiser votre activité.</p>
-              </div>
-              <span class="card-link">Voir le détail →</span>
-            </button>
+          <div class="compare-grid">
+            <div class="compare-card compare-card--before">
+              <h3>Avant</h3>
+              <ul>
+                <li><span class="compare-icon compare-icon--no">✕</span>Vous hésitez à vous lancer, par peur de vous tromper</li>
+                <li><span class="compare-icon compare-icon--no">✕</span>Vous testez seul, sans méthode, et ça coûte cher</li>
+                <li><span class="compare-icon compare-icon--no">✕</span>Vos publicités tournent mais ne vendent presque rien</li>
+                <li><span class="compare-icon compare-icon--no">✕</span>Votre boutique existe, mais ne convertit pas</li>
+                <li><span class="compare-icon compare-icon--no">✕</span>Vous doutez de pouvoir en vivre un jour</li>
+              </ul>
+            </div>
 
-            <button type="button" class="service-card" data-offer="ads">
-              <div>
-                <h3>Publicité Facebook Ads & TikTok Ads</h3>
-                <p class="price">249 000 FCFA</p>
-                <p>Maîtrisez la publicité digitale pour générer des ventes, des leads et une visibilité plus forte sur les réseaux.</p>
-              </div>
-              <span class="card-link">Voir le détail →</span>
-            </button>
+            <div class="compare-arrow" aria-hidden="true">→</div>
 
-            <button type="button" class="service-card" data-offer="shop">
-              <div>
-                <h3>Création de boutique en ligne + pack marketing</h3>
-                <p class="price">380 000 FCFA</p>
-                <p>Une offre complète pour créer votre boutique en ligne, structurer votre offre et lancer vos ventes efficacement.</p>
-              </div>
-              <span class="card-link">Voir le détail →</span>
-            </button>
-
-            <button type="button" class="service-card featured" data-offer="full">
-              <div>
-                <h3>Accompagnement full stack – Pack complet</h3>
-                <p class="price">500 000 FCFA</p>
-                <p>Le pack premium pour une stratégie complète : IA, publicité, boutique, positionnement, suivi et optimisation continue.</p>
-              </div>
-              <span class="card-link">Voir le détail →</span>
-            </button>
+            <div class="compare-card compare-card--after">
+              <h3>Après</h3>
+              <ul>
+                <li><span class="compare-icon compare-icon--yes">✓</span>Vous savez exactement quoi faire, étape par étape</li>
+                <li><span class="compare-icon compare-icon--yes">✓</span>Vous lancez des campagnes qui rapportent plus qu’elles ne coûtent</li>
+                <li><span class="compare-icon compare-icon--yes">✓</span>Votre boutique est prête à convertir, pas juste à exister</li>
+                <li><span class="compare-icon compare-icon--yes">✓</span>Vous vendez des produits digitaux, sans stock ni logistique</li>
+                <li><span class="compare-icon compare-icon--yes">✓</span>Vous avancez avec une méthode claire, pas au hasard</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="testimonials">
+      <!-- OFFRES -->
+      <section class="section" id="offres">
         <div class="container">
-          <div class="section-title">
-            <p class="eyebrow">Témoignages</p>
-            <h2>Des personnes accompagnées qui ont vu leurs résultats changer.</h2>
-          </div>
-
-          <div class="testimonial-grid">
-            <article class="testimonial-card">
-              <img src="asset image/WhatsApp Image 2026-07-16 at 21.30.55 (1).jpeg" alt="Témoignage 1" />
-              <h3>HOUDEGBE Vianney</h3>
-              <p>« J’ai généré 483 000 FCFA la première semaine grâce à l’accompagnement structuré et aux conseils adaptés. »</p>
-            </article>
-            <article class="testimonial-card">
-              <img src="asset image/WhatsApp Image 2026-07-16 at 21.30.55 (2).jpeg" alt="Témoignage 2" />
-              <h3>DAHA Mariano</h3>
-              <p>« Une méthode claire, des stratégies efficaces et un suivi qui m’a réellement aidé à avancer. »</p>
-            </article>
-            <article class="testimonial-card">
-              <img src="asset image/WhatsApp Image 2026-07-16 at 21.30.55 (3).jpeg" alt="Témoignage 3" />
-              <h3>JOVIA Clovis</h3>
-              <p>« J’ai compris comment vendre mieux, mieux communiquer et mieux exploiter les réseaux sociaux. »</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section about-section" id="about">
-        <div class="container about-grid">
-          <div>
-            <p class="eyebrow">Mon parcours</p>
-            <h2>Un parcours de travail, de discipline et de persévérance.</h2>
+          <div class="section-head">
+            <h2>Les offres que je propose</h2>
             <p>
-              Mon histoire n’est pas celle d’un homme qui a eu tout ce qu’il voulait sans effort. J’ai traversé des moments difficiles, mais j’ai toujours gardé l’ambition de réussir. Aujourd’hui, je mets cette force, cette discipline et cette envie de progresser au service de ceux qui veulent avancer.
-            </p>
-            <p>
-              Grâce à mon travail, à ma détermination et à mon engagement, j’ai obtenu la mention Très Bien au BAC. C’est cette même énergie que je transmets à mes clients et à mes élèves.
+              Pas de tarif figé affiché ici : on discute de votre situation sur WhatsApp et je
+              vous propose la formule la plus adaptée.
             </p>
           </div>
-          <div class="about-card">
-            <h3>Qui je suis</h3>
-            <ul>
-              <li>E-commerçant passionné par les ventes et le digital</li>
-              <li>Expert en marketing digital et stratégie de visibilité</li>
-              <li>Étudiant en licence 2 en intelligence artificielle</li>
-              <li>Accompagnant de personnes qui veulent passer à un autre niveau</li>
-            </ul>
+
+          <div class="offers-grid">
+            <div class="offer-card">
+              <h3>Publicité Facebook &amp; TikTok Ads</h3>
+              <p class="offer-desc">Structurer, lancer et optimiser des campagnes qui vendent réellement.</p>
+              <ul class="offer-list">
+                <li><span class="check">✓</span>Ciblage et structure de campagne</li>
+                <li><span class="check">✓</span>Créatives et messages qui convertissent</li>
+                <li><span class="check">✓</span>Lecture des statistiques et optimisation</li>
+                <li><span class="check">✓</span>Budget maîtrisé, sans gaspillage</li>
+              </ul>
+              <div class="offer-actions">
+                <a class="btn btn-outline" target="_blank" rel="noopener" data-wa="Bonjour Renoix, je suis intéressé(e) par l'offre Publicité Facebook & TikTok Ads.">WhatsApp</a>
+                <a class="btn btn-ghost" href="#reservation">Réserver un moment</a>
+              </div>
+            </div>
+
+            <div class="offer-card">
+              <h3>Boutique en ligne Shopify</h3>
+              <p class="offer-desc">De zéro à une boutique prête à vendre, bien structurée et crédible.</p>
+              <ul class="offer-list">
+                <li><span class="check">✓</span>Structure et positionnement de l’offre</li>
+                <li><span class="check">✓</span>Boutique Shopify claire et professionnelle</li>
+                <li><span class="check">✓</span>Fiches produits pensées pour vendre</li>
+                <li><span class="check">✓</span>Mise en ligne accompagnée</li>
+              </ul>
+              <div class="offer-actions">
+                <a class="btn btn-outline" target="_blank" rel="noopener" data-wa="Bonjour Renoix, je suis intéressé(e) par l'offre Boutique Shopify.">WhatsApp</a>
+                <a class="btn btn-ghost" href="#reservation">Réserver un moment</a>
+              </div>
+            </div>
+
+            <div class="offer-card">
+              <h3>Commerce des produits digitaux</h3>
+              <p class="offer-desc">Créer, packager et vendre un produit numérique qui se vend seul.</p>
+              <ul class="offer-list">
+                <li><span class="check">✓</span>Choix et création du produit digital</li>
+                <li><span class="check">✓</span>Packaging et présentation de l’offre</li>
+                <li><span class="check">✓</span>Mise en vente sans stock ni logistique</li>
+                <li><span class="check">✓</span>Stratégie de vente récurrente</li>
+              </ul>
+              <div class="offer-actions">
+                <a class="btn btn-outline" target="_blank" rel="noopener" data-wa="Bonjour Renoix, je suis intéressé(e) par l'offre Commerce des produits digitaux.">WhatsApp</a>
+                <a class="btn btn-ghost" href="#reservation">Réserver un moment</a>
+              </div>
+            </div>
+
+            <div class="offer-card offer-card--premium">
+              <p class="offer-tag">Offre complète</p>
+              <h3>Pack Premium</h3>
+              <p class="offer-desc">Tout ce qui précède, réuni dans un seul accompagnement, du début à la vente.</p>
+              <ul class="offer-list">
+                <li><span class="check check--gold">✓</span>Publicité Facebook &amp; TikTok Ads</li>
+                <li><span class="check check--gold">✓</span>Boutique en ligne Shopify</li>
+                <li><span class="check check--gold">✓</span>Commerce des produits digitaux</li>
+                <li><span class="check check--gold">✓</span>Suivi personnalisé jusqu’aux résultats</li>
+              </ul>
+              <div class="offer-actions">
+                <a class="btn btn-primary" target="_blank" rel="noopener" data-wa="Bonjour Renoix, je suis intéressé(e) par le Pack Premium complet.">WhatsApp</a>
+                <a class="btn btn-ghost" href="#reservation">Réserver un moment</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
+      <!-- TEMOIGNAGES -->
+      <section class="section" id="temoignages">
+        <div class="container">
+          <div class="section-head">
+            <h2>Ce que mes élèves montrent, pas ce que je raconte</h2>
+            <p>Captures d’écran réelles : ventes, commandes, retours de campagnes.</p>
+          </div>
+        </div>
+
+        <div class="proof-track">
+          <figure class="proof-card">
+            <img src="assets/temoignages/temoignage-1.jpg" alt="Capture d'écran d'un élève : résultat de vente" loading="lazy" />
+          </figure>
+          <figure class="proof-card">
+            <img src="assets/temoignages/temoignage-2.jpg" alt="Capture d'écran d'un élève : résultat de vente" loading="lazy" />
+          </figure>
+          <figure class="proof-card">
+            <img src="assets/temoignages/temoignage-3.jpg" alt="Capture d'écran d'un élève : résultat de vente" loading="lazy" />
+          </figure>
+          <figure class="proof-card">
+            <img src="assets/temoignages/temoignage-4.jpg" alt="Capture d'écran d'un élève : résultat de vente" loading="lazy" />
+          </figure>
+          <figure class="proof-card">
+            <img src="assets/temoignages/temoignage-5.jpg" alt="Capture d'écran d'un élève : résultat de vente" loading="lazy" />
+          </figure>
+          <figure class="proof-card">
+            <img src="assets/temoignages/temoignage-6.jpg" alt="Capture d'écran d'un élève : résultat de vente" loading="lazy" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- PARCOURS -->
+      <section class="section" id="parcours">
+        <div class="container parcours-grid">
+          <div class="parcours-photo-wrap">
+            <div class="parcours-photo" id="parcoursPhoto">
+              <img
+                src="assets/parcours/etape-1-inscription-faseg.jpg"
+                alt="Photo illustrant l'étape en cours du parcours de Renoix"
+                id="parcoursImg"
+              />
+              <p class="parcours-caption" id="parcoursCaption">
+                Étudiant en économie et gestion à la FASEG, Abomey-Calavi.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline" id="timeline">
+            <h2>Mon parcours</h2>
+
+            <ol class="timeline-list">
+              <li class="timeline-step is-active" data-caption="Inscription à la FASEG, Université d'Abomey-Calavi." data-image="assets/parcours/etape-1-inscription-faseg.jpg">
+                <span class="timeline-index">01</span>
+                <div>
+                  <h3>Inscription à la FASEG</h3>
+                  <p>Le point de départ : des cours d’économie et de gestion à Abomey-Calavi.</p>
+                </div>
+              </li>
+              <li class="timeline-step" data-caption="Premiers tests en e-commerce, en parallèle des études." data-image="assets/parcours/etape-2-debuts-ecommerce.jpg">
+                <span class="timeline-index">02</span>
+                <div>
+                  <h3>Premiers pas en e-commerce</h3>
+                  <p>En parallèle des cours : premiers tests, premières erreurs, premiers apprentissages.</p>
+                </div>
+              </li>
+              <li class="timeline-step" data-caption="Spécialisation en publicité Facebook & TikTok." data-image="assets/parcours/etape-3-publicite-digitale.jpg">
+                <span class="timeline-index">03</span>
+                <div>
+                  <h3>Spécialisation en publicité digitale</h3>
+                  <p>Facebook Ads, TikTok Ads, et la logique d’une campagne qui vend.</p>
+                </div>
+              </li>
+              <li class="timeline-step" data-caption="Lancement en e-commerce des produits digitaux." data-image="assets/parcours/etape-4-produits-digitaux.jpg">
+                <span class="timeline-index">04</span>
+                <div>
+                  <h3>Lancement des produits digitaux</h3>
+                  <p>La vente de produits numériques, sans stock ni logistique, prend le relais.</p>
+                </div>
+              </li>
+              <li class="timeline-step" data-caption="Obtention de la licence à la FASEG." data-image="assets/parcours/etape-5-obtention-licence.jpg">
+                <span class="timeline-index">05</span>
+                <div>
+                  <h3>Obtention de la licence</h3>
+                  <p>Le diplôme en poche, sans jamais avoir mis l’activité entre parenthèses.</p>
+                </div>
+              </li>
+              <li class="timeline-step" data-caption="Installation en France, activité et formations poursuivies à distance." data-image="assets/parcours/etape-6-installation-france.jpg">
+                <span class="timeline-index">06</span>
+                <div>
+                  <h3>Installation en France</h3>
+                  <p>Le départ vers la France, sans jamais arrêter d’accompagner.</p>
+                </div>
+              </li>
+              <li class="timeline-step" data-caption="Aujourd'hui : plus de 4 ans d'expérience et plus de 100M FCFA générés." data-image="assets/parcours/etape-7-aujourdhui.jpg">
+                <span class="timeline-index">07</span>
+                <div>
+                  <h3>Aujourd’hui</h3>
+                  <p>Plus de 4 ans d’expérience, plus de 100 boutiques mises en ligne, près de 10 pays conquis.</p>
+                </div>
+              </li>
+            </ol>
+
+            <div class="timeline-note">
+              <p>
+                « Mon parcours n’a pas été une ligne droite : j’ai mené mes études et mes premiers
+                pas en e-commerce en même temps, avec des échecs qui m’ont plus appris que
+                n’importe quel cours. Le vrai déclic, ce n’est pas d’attendre d’avoir toutes les
+                réponses avant de commencer, c’est de tester vite, corriger vite, et rester
+                constant même quand les résultats ne viennent pas tout de suite. C’est cette
+                discipline que j’essaie de transmettre à chaque élève que j’accompagne. »
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESERVATION -->
+      <section class="section" id="reservation">
+        <div class="container">
+          <div class="section-head">
+            <h2>Réserver un moment avec moi</h2>
+            <p>Deux façons de travailler ensemble, selon votre disponibilité.</p>
+          </div>
+
+          <div class="booking-grid">
+            <div class="booking-card">
+              <h3>Formation en présentiel</h3>
+              <p class="booking-price">1499&nbsp;€</p>
+              <p class="booking-desc">
+                Une rencontre en face à face pour aller au fond de votre projet, sans limite de
+                temps fixe et avec un vrai suivi sur place.
+              </p>
+              <a
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener"
+                data-wa="Bonjour Renoix, je souhaite réserver une formation en présentiel (1499€)."
+                >Réserver en présentiel</a
+              >
+            </div>
+
+            <div class="booking-card booking-card--highlight">
+              <p class="offer-tag">Le plus demandé</p>
+              <h3>Session en ligne — 1h</h3>
+              <p class="booking-price">5000&nbsp;FCFA</p>
+              <p class="booking-desc">
+                Un appel d’une heure pour répondre à vos questions et débloquer votre
+                situation, où que vous soyez.
+              </p>
+              <a
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener"
+                data-wa="Bonjour Renoix, je souhaite réserver une session en ligne d'1h (5000 FCFA)."
+                >Réserver ma session</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT / SOCIAL -->
       <section class="section contact-section" id="contact">
-        <div class="container contact-box">
-          <div>
-            <p class="eyebrow">Prêt à démarrer ?</p>
-            <h2>Discutons de votre projet et choisissons la meilleure offre pour vous.</h2>
+        <div class="container">
+          <div class="section-head">
+            <h2>Découvrez mes réseaux</h2>
+            <p>Actualités, coulisses et résultats d’élèves publiés au quotidien.</p>
           </div>
-          <a href="https://wa.me/+22957318891" target="_blank" rel="noopener" class="btn btn-primary">Écrire sur WhatsApp</a>
+
+          <div class="social-list">
+            <a
+              class="social-item"
+              href="https://wa.me/33775454614"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="social-icon social-icon--whatsapp">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3.5a8.4 8.4 0 0 0-7.24 12.66L3.5 20.5l4.47-1.2A8.4 8.4 0 1 0 12 3.5Zm4.9 11.86c-.24.68-1.4 1.32-1.93 1.4-.52.08-.98.24-3.3-.7-2.79-1.14-4.55-3.96-4.7-4.15-.13-.18-1.13-1.5-1.13-2.86 0-1.36.71-2.02.96-2.3.2-.45.4-.46.6-.47h.5c.16 0 .38-.06.58.44.2.5.7 1.72.76 1.85.06.13.1.28.02.45-.09.17-.13.28-.26.43-.13.15-.28.34-.4.46-.13.13-.27.27-.12.53.15.27.68 1.12 1.46 1.82 1 .9 1.85 1.18 2.11 1.31.27.13.42.11.58-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.6-.13.25.09 1.57.74 1.84.88.27.13.45.2.51.31.07.13.07.71-.17 1.4Z"/></svg>
+              </span>
+              <span class="social-text">
+                <strong>WhatsApp Direct</strong>
+                <span>Discutez directement avec moi pour vos questions.</span>
+              </span>
+              <span class="social-arrow">→</span>
+            </a>
+
+            <a
+              class="social-item"
+              href="https://www.instagram.com/me_jovias?stkn=MXN6a28yd2Y0eHRvcA%3D%3D&utm_source=qr"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="social-icon social-icon--instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.3"/><circle cx="16.3" cy="7.7" r="0.9" fill="white" stroke="none"/></svg>
+              </span>
+              <span class="social-text">
+                <strong>Instagram</strong>
+                <span>Stories quotidiennes, coulisses et conseils.</span>
+              </span>
+              <span class="social-arrow">→</span>
+            </a>
+
+            <a
+              class="social-item"
+              href="https://www.tiktok.com/@renoix100?_r=1&_t=ZT-99VJRX41Gxi"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="social-icon social-icon--tiktok">
+                <svg viewBox="0 0 24 24" fill="white"><path d="M14 3v10.5a3.5 3.5 0 1 1-3-3.46V7a6.5 6.5 0 1 0 6.5 6.5V9.8A6.3 6.3 0 0 0 21 11V7.7a6.3 6.3 0 0 1-4-1.6A6.3 6.3 0 0 1 15.3 3H14Z"/></svg>
+              </span>
+              <span class="social-text">
+                <strong>TikTok</strong>
+                <span>Vidéos courtes, résultats et méthode en images.</span>
+              </span>
+              <span class="social-arrow">→</span>
+            </a>
+
+            <a
+              class="social-item"
+              href="https://www.facebook.com/share/1HhBXfA7eN/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="social-icon social-icon--facebook">
+                <svg viewBox="0 0 24 24" fill="white"><path d="M15 8.5h2V5.2c-.34-.05-1.5-.15-2.86-.15-2.83 0-4.77 1.73-4.77 4.9v2.55H6.5V16h2.87v8h3.4v-8h2.86l.45-3.5h-3.31V10.3c0-1.01.27-1.8 1.83-1.8Z"/></svg>
+              </span>
+              <span class="social-text">
+                <strong>Page Facebook</strong>
+                <span>Publications, directs et actualités.</span>
+              </span>
+              <span class="social-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- MEILLEURS ELEVES -->
+      <section class="section" id="eleves">
+        <div class="container">
+          <div class="section-head">
+            <h2>Mes meilleurs élèves formés</h2>
+            <p>Ceux qui ont le plus appliqué la méthode, avec le plus de constance.</p>
+          </div>
+
+          <div class="students-grid">
+            <div class="student-card">
+              <div class="student-photo-wrap">
+                <img src="assets/eleves/prudence-azah.jpg" alt="Photo de Prudence AZAH" class="student-photo" />
+                <span class="student-badge student-badge--gold">1er</span>
+              </div>
+              <h3>Prudence AZAH</h3>
+              <p>
+                Élève la plus rigoureuse de la promotion : une méthode appliquée à la lettre et
+                une constance qui a fait toute la différence sur ses résultats.
+              </p>
+            </div>
+
+            <div class="student-card">
+              <div class="student-photo-wrap">
+                <img src="assets/eleves/dehahou-axel.jpg" alt="Photo de DEHAHOU Axel" class="student-photo" />
+                <span class="student-badge student-badge--silver">2e</span>
+              </div>
+              <h3>DEHAHOU Axel</h3>
+              <p>
+                Une progression rapide entre les premiers tests et une boutique qui tourne
+                aujourd’hui de façon autonome.
+              </p>
+            </div>
+
+            <div class="student-card">
+              <div class="student-photo-wrap">
+                <img src="assets/eleves/kegou-bruno.jpg" alt="Photo de KEGOU Bruno" class="student-photo" />
+                <span class="student-badge student-badge--bronze">3e</span>
+              </div>
+              <h3>KEGOU Bruno</h3>
+              <p>
+                Parti de zéro en publicité digitale, aujourd’hui capable de gérer ses propres
+                campagnes de A à Z.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
       <div class="container footer-content">
-        <p>© <span id="year"></span> Tous droits réservés.</p>
-        <p>IA • Marketing digital • E-commerce • Afrique</p>
+        <p>© <span id="year"></span> Renoix. Tous droits réservés.</p>
+        <p>E-commerce • Publicité digitale • Formations</p>
       </div>
     </footer>
-
-    <div class="modal-overlay" id="offerModal" aria-hidden="true">
-      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-        <button class="modal-close" id="closeModal" aria-label="Fermer">×</button>
-        <div id="modalContent"></div>
-      </div>
-    </div>
   </body>
 </html>
