@@ -40,11 +40,15 @@ dans le bon dossier. Formats acceptés : .jpg, .jpeg ou .png (si tu utilises
    -> temoignage-6.jpg
    -> temoignage-7.jpg
    -> temoignage-8.jpg
+   -> temoignage-9.jpg
+   -> temoignage-10.jpg
+   -> temoignage-11.jpg
+   -> temoignage-12.jpg
+   -> temoignage-13.jpg
+   -> temoignage-14.jpg
    Ce sont les captures d'écran de résultats d'élèves (ventes, commandes,
-   messages de retour, etc.). Tu peux en mettre plus ou moins de 6 : si tu
-   en ajoutes, duplique un bloc <figure class="proof-card">...</figure>
-   dans index.html (section id="temoignages") en changeant juste le nom
-   du fichier.
+   messages de retour, etc.). Les fichiers 9 à 14 sont déjà reliés à la
+   galerie : il suffit de déposer les images avec ces noms dans ce dossier.
 
 
 4) assets/eleves/
